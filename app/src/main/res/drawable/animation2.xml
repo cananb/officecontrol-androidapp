@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--önce burada resimlerin adlarını yazıcaksın
+        resimleri drawable klasörüne ato
+        duraiton ayalicak mısın  400 mü kalsın kalsın kal neysesı tamam
+
+     -->
+    <item
+    android:drawable="@drawable/noktalar1"
+
+    android:duration="400"/>
+    <item
+        android:drawable="@drawable/noktalar2"
+
+        android:duration="400"/>
+    <item
+        android:drawable="@drawable/noktalar3"
+
+        android:duration="400"/>
+    <item
+        android:drawable="@drawable/noktalar4"
+
+        android:duration="400"/>
+    <item
+        android:drawable="@drawable/noktalar5"
+
+        android:duration="400"/>
+    <item
+        android:drawable="@drawable/noktalar6"
+
+        android:duration="400"/>
+
+   </animation-list>

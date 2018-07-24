@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.exam.ex_rec_card.Activities.Step3Activity">
+
+    <LinearLayout
+        android:id="@+id/app_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fffbe0">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_step3"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="?attr/colorPrimary">
+
+                <TextView
+                    android:id="@+id/toolbar_title_step3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#85857a"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_top"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/app_top"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_bg_sic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/s3sicaklik" />
+
+                    <TextView
+                        android:id="@+id/ort_sic_deg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/ort"
+                        android:layout_alignTop="@+id/tv_step3_sicaklik"
+                        android:text="18 C"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/ort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tv_step3_sicaklik"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="-33dp"
+                        android:layout_marginStart="104dp"
+                        android:text="Ortalama"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/anlik_sic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tv_step3_sicaklik"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="-33dp"
+                        android:layout_marginEnd="151dp"
+                        android:text="Anlık"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/zaman_sic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tv_step3_sicaklik"
+                        android:layout_alignEnd="@+id/tv_step3_sicaklik"
+                        android:layout_marginBottom="-33dp"
+                        android:text="Zaman"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+
+                        android:id="@+id/tv_step3_sicaklik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="false"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="44dp"
+                        android:text="18:00"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/anlik_sic_deg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_step3_sicaklik"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="134dp"
+                        android:text="20 C"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="30sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/iv_bg_nem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/s3nem" />
+
+                    <TextView
+                        android:id="@+id/tv_step3_nem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@+id/ort_nem"
+                        android:layout_marginTop="42dp"
+                        android:text="18 C"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/ort_nem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="104dp"
+                        android:layout_marginTop="11dp"
+                        android:text="Ortalama"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/anlik_nem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/ort_nem"
+                        android:layout_marginEnd="147dp"
+                        android:text="Anlık"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/zaman_nem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/ort_nem"
+                        android:layout_marginEnd="34dp"
+                        android:text="Zaman"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+
+                        android:id="@+id/zaman_nem_deg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/tv_step3_nem"
+                        android:layout_marginEnd="20dp"
+                        android:text="18:00"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/ort_nem_deg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/tv_step3_nem"
+                        android:layout_marginEnd="135dp"
+                        android:text="20 C"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="30sp" />
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_bg_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/s3gurultu" />
+
+                    <TextView
+                        android:id="@+id/tv_step3_gurultu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@+id/ort_gurultu"
+                        android:layout_marginTop="42dp"
+                        android:text="18 C"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/ort_gurultu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="104dp"
+                        android:layout_marginTop="11dp"
+                        android:text="Ortalama"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/anlik_gurultu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/ort_gurultu"
+                        android:layout_marginEnd="147dp"
+                        android:text="Anlık"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/zaman_gurultu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/ort_gurultu"
+                        android:layout_marginEnd="43dp"
+                        android:text="Zaman"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+
+                        android:id="@+id/zaman_gurultu_deg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/tv_step3_gurultu"
+                        android:layout_marginEnd="17dp"
+                        android:text="18:00"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/ort_gurultu_deg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/tv_step3_gurultu"
+                        android:layout_marginEnd="133dp"
+                        android:text="20 C"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="30sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+     </ScrollView>
+</RelativeLayout>
+
+
